@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title>alias-masked DOM properties (#14074)</title>
+	<script>
+		var error = false;
+		window.onready = function() { error = "Called window.onready"; };
+	</script>
+	<script src="../../jquery.js"></script>
+<<<<<<< HEAD
+	<script src="../iframeTest.js"></script>
+=======
+>>>>>>> refs/remotes/origin/1.12-stable
+</head>
+<body>
+	<form>
+		<input type="text" id="nodeName"/>
+	</form>
+	<script>
+		jQuery(function() {
+			setTimeout( function() {
+<<<<<<< HEAD
+				startIframeTest( error );
+=======
+				window.parent.iframeCallback( error );
+>>>>>>> refs/remotes/origin/1.12-stable
+			});
+		});
+	</script>
+</body>
+</html>

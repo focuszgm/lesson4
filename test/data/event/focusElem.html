@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>.focus() (activeElement access #13393)</title>
+
+	<script src="../../jquery.js"></script>
+<<<<<<< HEAD
+	<script src="../iframeTest.js"></script>
+=======
+>>>>>>> refs/remotes/origin/1.12-stable
+</head>
+<body>
+	<a href="#" id="frame-link"></a>
+	<script>
+<<<<<<< HEAD
+		jQuery( "#frame-link" ).trigger( "focus" );
+		startIframeTest( true );
+=======
+		jQuery("#frame-link").focus();
+		window.parent.iframeCallback( true );
+>>>>>>> refs/remotes/origin/1.12-stable
+	</script>
+</body>
+</html>

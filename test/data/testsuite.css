@@ -1,0 +1,198 @@
+ol#empty {
+	opacity: 0;
+<<<<<<< HEAD
+=======
+	filter:Alpha(opacity=0) progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffff0000', EndColorStr='#ffffffff');
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div#fx-tests h4 {
+	background: red;
+}
+
+div#fx-tests h4.pass {
+	background: green;
+}
+
+div#fx-tests div.box {
+	background: red;
+	overflow: hidden;
+	border: 2px solid #000;
+}
+
+div#fx-tests div.overflow {
+	overflow: visible;
+<<<<<<< HEAD
+=======
+}
+
+div.inline {
+	display: inline;
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div.autoheight {
+	height: auto;
+}
+
+div.autowidth {
+	width: auto;
+}
+
+div.autoopacity {
+<<<<<<< HEAD
+	opacity: 1;
+=======
+	opacity: auto;
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div.largewidth {
+	width: 100px;
+}
+
+div.largeheight {
+	height: 100px;
+<<<<<<< HEAD
+=======
+}
+
+div.largeopacity {
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div.medwidth {
+	width: 50px;
+}
+
+div.medheight {
+	height: 50px;
+}
+
+div.medopacity {
+	opacity: 0.5;
+<<<<<<< HEAD
+}
+
+div.nowidth {
+	width: 0;
+}
+
+div.noheight {
+	height: 0;
+=======
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+div.nowidth {
+	width: 0px;
+}
+
+div.noheight {
+	height: 0px;
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div.noopacity {
+	opacity: 0;
+<<<<<<< HEAD
+=======
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+div.hidden {
+	display: none;
+>>>>>>> refs/remotes/origin/1.12-stable
+}
+
+div#fx-tests div.widewidth {
+	background-repeat: repeat-x;
+}
+
+div#fx-tests div.wideheight {
+	background-repeat: repeat-y;
+}
+
+div#fx-tests div.widewidth.wideheight {
+	background-repeat: repeat;
+}
+
+div#fx-tests div.noback {
+	background-image: none;
+}
+
+.chain-test,
+.chain-test div {
+	width: 100px;
+	height: 20px;
+	position: relative;
+	float: left;
+}
+.chain-test div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chain-test {
+	background: red;
+}
+.chain-test div {
+	background: green;
+}
+
+.chain-test-out {
+	background: green;
+}
+.chain-test-out div {
+	background: red;
+	display: none;
+}
+
+#nothiddendiv { font-size: 16px; }
+#nothiddendivchild.em { font-size: 2em; }
+#nothiddendivchild.prct { font-size: 150%; }
+
+/* #9239 Attach a background to the body( avoid crashes in removing the test element in support ) */
+body, div { background: url(http://static.jquery.com/files/rocker/images/logo_jquery_215x53.gif) no-repeat -1000px 0; }
+
+/* #10501 */
+section { background:#f0f; display:block; }
+
+/* #11971 */
+#foo { background: url(1x1.jpg) right bottom no-repeat; }
+
+/* #14824 */
+#span-14824 { display: block; }
+
+#display { display: list-item !important; }
+
+<<<<<<< HEAD
+.block { display: block; }
+.inline { display: inline; }
+.list-item { display: list-item; }
+.hidden, .none { display: none; }
+=======
+/* fix get alpha opacity in IE8 */
+.fix-get-alpha-opacity-in-ie8 {
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+>>>>>>> refs/remotes/origin/1.12-stable
+
+#div-gh-2836 {
+	position: relative;
+	overflow: auto;
+	height: 100px;
+}
+#div-gh-2836 div {
+	position: relative;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/1.12-stable

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="../../jquery.js"></script>
+	<script>var $j = jQuery.noConflict();</script>
+<<<<<<< HEAD
+	<script src="../iframeTest.js"></script>
+=======
+>>>>>>> refs/remotes/origin/1.12-stable
+</head>
+<body>
+<iframe id="dont_return" src="dont_return.php"></iframe>
+<script>
+	var timeoutId, $,
+		timeoutFired = false;
+
+	setTimeout(function () {
+		// Load another jQuery copy using the first one.
+		$j.getScript( "../../../dist/jquery.js", function () {
+			$j( "#dont_return" ).attr( "src", "about:blank" );
+
+			// document ready handled by the just-loaded jQuery copy.
+			$(function () {
+				clearTimeout( timeoutId );
+				if ( !timeoutFired ) {
+<<<<<<< HEAD
+					startIframeTest( true );
+=======
+					window.parent.iframeCallback( true );
+>>>>>>> refs/remotes/origin/1.12-stable
+				}
+			});
+		});
+
+		timeoutId = setTimeout(function () {
+			timeoutFired = true;
+<<<<<<< HEAD
+			startIframeTest( false );
+=======
+			window.parent.iframeCallback( false );
+>>>>>>> refs/remotes/origin/1.12-stable
+		}, 10000);
+	});
+</script>
+</body>
+</html>
